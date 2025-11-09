@@ -30,7 +30,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## About PinoySeoul Media Enterprise
 
-PinoySeoul Media Enterprise is dedicated to [brief description of company's mission/focus, e.g., "providing high-quality digital media content and services"].
+PinoySeoul Media Enterprise empowers cultural exchange through 24/7 streaming, creator partnerships, and AI-powered content serving Filipino communities and K-culture enthusiasts worldwide.
 
 ## Contact
 
