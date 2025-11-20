@@ -15,7 +15,51 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
 &#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-PQ5BX3S&#39;);</script>    
     
-    <title><data:view.title.escaped/></title>
+    <b:if cond='data:view.isHomepage'>
+      <title><data:blog.title.escaped/></title>
+    <b:else/>
+      <title><data:view.title.escaped/> - <data:blog.title.escaped/></title>
+    </b:if>
+    <meta expr:content='data:view.description or data:blog.description' name='description'/>
+    <!-- Open Graph and Twitter Cards -->
+    <b:if cond='data:view.isSingleItem'>
+      <meta expr:content='data:view.title' property='og:title'/>
+      <meta expr:content='data:view.url.canonical' property='og:url'/>
+      <meta content='article' property='og:type'/>
+      <meta expr:content='data:blog.title' property='og:site_name'/>
+      <meta expr:content='data:post.featuredImage' property='og:image'/>
+      <meta expr:content='data:view.description' property='og:description'/>
+      <meta content='summary_large_image' name='twitter:card'/>
+      <meta expr:content='data:view.title' name='twitter:title'/>
+      <meta expr:content='data:view.description' name='twitter:description'/>
+      <meta expr:content='data:post.featuredImage' name='twitter:image'/>
+    <b:else/>
+      <meta expr:content='data:blog.title' property='og:title'/>
+      <meta expr:content='data:blog.homepageUrl' property='og:url'/>
+      <meta content='website' property='og:type'/>
+      <meta expr:content='data:blog.title' property='og:site_name'/>
+      <meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4EFFiPBGQ6_E_noTIVeaUmMfE-jWRHzRA2LLZxkckH7TWgjaFN502EEeLskJ7_tEBLgo8g7SlVR_F9ywsgPJeRHTcTkK_C9gwy4iO4vzJ74vLxt9qcXHfJY9rgjwSpz5ApwMOvOh5_J4/s170/PSmedia.png' property='og:image'/>
+      <meta expr:content='data:blog.description' property='og:description'/>
+      <meta content='summary_large_image' name='twitter:card'/>
+      <meta expr:content='data:blog.title' name='twitter:title'/>
+      <meta expr:content='data:blog.description' name='twitter:description'/>
+      <meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4EFFiPBGQ6_E_noTIVeaUmMfE-jWRHzRA2LLZxkckH7TWgjaFN502EEeLskJ7_tEBLgo8g7SlVR_F9ywsgPJeRHTcTkK_C9gwy4iO4vzJ74vLxt9qcXHfJY9rgjwSpz5ApwMOvOh5_J4/s170/PSmedia.png' name='twitter:image'/>
+    </b:if>
+    <b:if cond='data:view.isHomepage'>
+      <script type='application/ld+json'>
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "<data:blog.title.escaped/>",
+          "url": "<data:blog.homepageUrl.canonical.escaped/>",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "<data:blog.searchUrl.escaped/>?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      </script>
+    </b:if>
     <b:include data='blog' name='all-head-content'/>
 
     <!-- Google Fonts -->
@@ -1322,32 +1366,48 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
             <b:includable id='postMeta' var='post'>
               <b:include data='post' name='postMetadataJSON'/>
             </b:includable>
-            <b:includable id='postMetadataJSONImage'>
-  &quot;image&quot;: {
-    &quot;@type&quot;: &quot;ImageObject&quot;,
-    <b:if cond='data:post.featuredImage.isResizable'>
-    &quot;url&quot;: &quot;<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:630&quot;)'/>&quot;,
-    &quot;height&quot;: 630,
-    &quot;width&quot;: 1200
-    <b:else/>
-    &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/&quot;,
-    &quot;height&quot;: 348,
-    &quot;width&quot;: 1200
-    </b:if>
-  },
-</b:includable>
-            <b:includable id='postMetadataJSONPublisher'>
- &quot;publisher&quot;: {
-    &quot;@type&quot;: &quot;Organization&quot;,
-    &quot;name&quot;: &quot;Blogger&quot;,
-    &quot;logo&quot;: {
-      &quot;@type&quot;: &quot;ImageObject&quot;,
-      &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/h60/&quot;,
-      &quot;width&quot;: 206,
-      &quot;height&quot;: 60
-    }
-  },
-</b:includable>
+            <b:includable id='postMetadataJSON' var='post'>
+              <script type='application/ld+json'>
+                {
+                  "@context": "http://schema.org",
+                  "@type": "BlogPosting",
+                  "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "<data:post.url.canonical.jsonEscaped/>"
+                  },
+                  "headline": "<data:post.title.jsonEscaped/>",
+                  "image": {
+                    "@type": "ImageObject",
+                    <b:if cond='data:post.featuredImage.isResizable'>
+                      "url": "<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:630&quot;)'/>",
+                      "height": 630,
+                      "width": 1200
+                    <b:else/>
+                      "url": "https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/",
+                      "height": 348,
+                      "width": 1200
+                    </b:if>
+                  },
+                  "datePublished": "<data:post.dateHeader.iso8601/>",
+                  "dateModified": "<data:post.lastUpdated.iso8601/>",
+                  "author": {
+                    "@type": "Person",
+                    "name": "<data:post.author.name.jsonEscaped/>"
+                  },
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "<data:blog.title.escaped/>",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4EFFiPBGQ6_E_noTIVeaUmMfE-jWRHzRA2LLZxkckH7TWgjaFN502EEeLskJ7_tEBLgo8g7SlVR_F9ywsgPJeRHTcTkK_C9gwy4iO4vzJ74vLxt9qcXHfJY9rgjwSpz5ApwMOvOh5_J4/s170/PSmedia.png",
+                      "width": 170,
+                      "height": 40
+                    }
+                  },
+                  "description": "<data:view.description.jsonEscaped/>"
+                }
+              </script>
+            </b:includable>
             <b:includable id='postNavigation' var='post'>
               <!-- Post Navigation Item -->
               <div class='post-nav'>
@@ -1387,21 +1447,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
                 </div>  
             </b:includable>
             <b:includable id='postShareButtons' var='post'>
-              <!-- Post ShareButtons -->
-              <b:if cond='data:allBylineItems.share'>
-                <div class='post-share'>
-                  <ul class='share-links social social-color'>
-                    <b:class cond='data:blog.isMobileRequest' name='is-mobile'/>
-                    <li class='facebook-f'><a class='facebook' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' onclick='window.open(this.href, &apos;windowName&apos;, &apos;width=550, height=650, left=24, top=24, scrollbars, resizable&apos;); return false;' rel='nofollow'/></li>
-                    <li class='twitter'><a class='twitter' expr:href='&quot;https://twitter.com/intent/tweet?via=templatesyard&amp;url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' onclick='window.open(this.href, &apos;windowName&apos;, &apos;width=550, height=450, left=24, top=24, scrollbars, resizable&apos;); return false;' rel='nofollow'/></li>
-                    <li class='pinterest-p'><a class='pinterest' expr:href='&quot;https://www.pinterest.com/pin/create/button/?url=&quot; + data:post.url + &quot;&amp;media=&quot; + data:post.featuredImage + &quot;&amp;description=&quot; + data:post.title' onclick='window.open(this.href, &apos;windowName&apos;, &apos;width=735, height=750, left=24, top=24, scrollbars, resizable&apos;); return false;' rel='nofollow'/></li> 
-                                  <li class='linkedin'><a class='linkedin' expr:href='&quot;https://www.linkedin.com/shareArticle?url=&quot; + data:post.url' onclick='window.open(this.href, &apos;windowName&apos;, &apos;width=950, height=650, left=24, top=24, scrollbars, resizable&apos;); return false;' rel='nofollow'/></li>
-                    <li class='whatsapp whatsapp-desktop'><a class='whatsapp' expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.title + &quot; | &quot; + data:post.url' onclick='window.open(this.href, &apos;windowName&apos;, &apos;width=900, height=550, left=24, top=24, scrollbars, resizable&apos;); return false;' rel='nofollow'/></li>
-                    <li class='whatsapp whatsapp-mobile'><a class='whatsapp' expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:post.title + &quot; | &quot; + data:post.url' rel='nofollow' target='_blank'/></li> 
-                    <li class='email'><a class='email' expr:href='&quot;mailto:?subject=&quot; + data:post.title + &quot;&amp;body=&quot; + data:post.url' onclick='window.open(this.href, &apos;windowName&apos;, &apos;width=500, height=400, left=24, top=24, scrollbars, resizable&apos;); return false;' rel='nofollow'/></li>
-                  </ul>
-                </div>
-              </b:if>
+              <!-- Post ShareButtons - Disabled, replaced by Open Graph and Twitter Card meta tags -->
             </b:includable>
             <b:includable id='postShortMeta'>
               <b:comment>Disabled</b:comment> 
