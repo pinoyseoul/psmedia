@@ -35,3 +35,17 @@ PinoySeoul Media Enterprise empowers cultural exchange through 24/7 streaming, c
 ## Contact
 
 For inquiries, please visit [PinoySeoul.com](https://www.pinoyseoul.com).
+
+## Changes/Improvements
+
+This theme has undergone significant updates to enhance its search engine optimization (SEO), structured data implementation (schema.org), and social media sharing capabilities.
+
+### Key Improvements:
+
+*   **Improved SEO Title Logic:** The title tag now dynamically adjusts for better SEO, displaying "Blog Title" on the homepage and "Post Title - Blog Title" on individual post pages.
+*   **Dynamic Meta Description:** A dynamic meta description has been implemented, providing relevant snippets for search engines on post pages and a general description for other pages.
+*   **Enhanced Social Media Sharing (Open Graph & Twitter Cards):** Comprehensive Open Graph (`og:`) and Twitter Card (`twitter:`) meta tags have been added. This ensures that when content is shared on platforms like Facebook, LinkedIn, and X (Twitter), rich and accurate previews (including titles, descriptions, and featured images) are displayed.
+*   **Structured Data (Schema.org) Implementation:**
+    *   **WebSite Schema:** JSON-LD for "WebSite" schema is now included on the homepage to help search engines understand the overall website structure and search functionality.
+    *   **BlogPosting Schema:** Detailed JSON-LD for "BlogPosting" schema is implemented on individual post pages. This provides search engines with structured information about the article, author, publication date, and featured images, improving visibility in search results and potentially enabling rich snippets.
+*   **Cleaned Up Outdated Sharing Buttons:** Redundant and less effective direct social sharing buttons have been disabled, as Open Graph and Twitter Cards now handle the sharing previews more effectively.
