@@ -48,14 +48,14 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
     <b:if cond='data:view.isHomepage'>
       <script type='application/ld+json'>
         {
-          "@context": "http://schema.org",
-          "@type": "WebSite",
-          "name": "<data:blog.title.escaped/>",
-          "url": "<data:blog.homepageUrl.canonical.escaped/>",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "<data:blog.searchUrl.escaped/>?q={search_term_string}",
-            "query-input": "required name=search_term_string"
+          &quot;@context&quot;: &quot;http://schema.org&quot;,
+          &quot;@type&quot;: &quot;WebSite&quot;,
+          &quot;name&quot;: &quot;<data:blog.title.escaped/>&quot;,
+          &quot;url&quot;: &quot;<data:blog.homepageUrl.canonical.escaped/>&quot;,
+          &quot;potentialAction&quot;: {
+            &quot;@type&quot;: &quot;SearchAction&quot;,
+            &quot;target&quot;: &quot;<data:blog.searchUrl.escaped/>?q={search_term_string}&quot;,
+            &quot;query-input&quot;: &quot;required name=search_term_string&quot;
           }
         }
       </script>
@@ -294,11 +294,13 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
         <b:section class='top-bar-social social' id='top-bar-social' maxwidgets='1' name='Social Top' showaddelement='yes'>
            <b:widget id='LinkList73' locked='true' title='' type='LinkList' version='2' visible='true'>
              <b:widget-settings>
+               <b:widget-setting name='link-3'>https://github.com/pinoyseoul</b:widget-setting>
                <b:widget-setting name='sorting'>NONE</b:widget-setting>
                <b:widget-setting name='text-1'>youtube</b:widget-setting>
                <b:widget-setting name='link-1'>https://www.youtube.com/pinoyseoul</b:widget-setting>
                <b:widget-setting name='text-0'>facebook</b:widget-setting>
                <b:widget-setting name='link-2'>https://play.google.com/store/apps/dev?id=5053859818212024185</b:widget-setting>
+               <b:widget-setting name='text-3'>github</b:widget-setting>
                <b:widget-setting name='link-0'>https://facebook.com/pinoyseoul.com</b:widget-setting>
                <b:widget-setting name='text-2'>gplus</b:widget-setting>
              </b:widget-settings>
@@ -322,7 +324,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
   <div id='header-wrap'>
     <div class='container row'>
       <b:section class='header-logo' id='header-logo' maxwidgets='1' name='Header Logo' showaddelement='yes'>
-        <b:widget id='Header1' locked='true' title='PS Media Enterprise (Header)' type='Header' version='2' visible='true'>
+        <b:widget id='Header1' locked='true' title='PinoySeoul Media Enterprise (Header)' type='Header' version='2' visible='true'>
           <b:widget-settings>
             <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4EFFiPBGQ6_E_noTIVeaUmMfE-jWRHzRA2LLZxkckH7TWgjaFN502EEeLskJ7_tEBLgo8g7SlVR_F9ywsgPJeRHTcTkK_C9gwy4iO4vzJ74vLxt9qcXHfJY9rgjwSpz5ApwMOvOh5_J4/s170/PSmedia.png</b:widget-setting>
             <b:widget-setting name='displayHeight'>40</b:widget-setting>
@@ -413,7 +415,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
             <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
             <b:widget-setting name='displayWidth'>1058</b:widget-setting>
             <b:widget-setting name='link'/>
-            <b:widget-setting name='caption'>PinoySeoul Media Enterprise empowers cultural exchange through 24/7 streaming, creator partnerships, and AI-powered content serving Filipino communities and K-culture enthusiasts worldwide.</b:widget-setting>
+            <b:widget-setting name='caption'>PinoySeoul Media Enterprise empowers cultural exchange through 24/7 streaming, creator partnerships, and media skills development, serving Filipino communities and K-culture enthusiasts worldwide.</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
             <b:include name='content'/>
@@ -457,8 +459,8 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
               <b:widget-setting name='link-3'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsrC8Y8dusOiRhBUWx2zJMnr9a3o6xOvE8PklwnCw-meyfDV8YXEt9IzP8cxMXhsEnrGnyV5Ckog8-uvbRHHfMPj7teRJS1dyDXMEFlupe_JiruppMUNw9ZLtqt7wCc4_qh6T3Ay2zOH6efiUjPq_Bm5an8YFp54d84UkTmLIzgOfTy3aQ0D5mpIe1aQQ/s1600/creator-agency.png</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
               <b:widget-setting name='link-4'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheYHXbEHMLjGr1-8dIJfWs5trWY8sKx1sbvKZidV_cVQrFHCDIvEI8Il02WFab2TdrOYXU2rDV9HcmnXpqhl4EOyZVdWx2Wqvq_dhg2arbHgwGFPlVWfUlgezctHuKKMdcqPi72HDLX2ZHyHbWj4ixi8eSSOeKjRP6A1vbw07JJR_OQ7K35hQqIdUWN2M/s1600/alternate-education.png</b:widget-setting>
-              <b:widget-setting name='text-1'>AI-Assisted Contents</b:widget-setting>
-              <b:widget-setting name='link-1'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhadCi_QDd8zQz0LLn9ujFsedVyDIVSjSPx4fCxel0sLKHCW7m0Kgpw7qhUIpBUizzRSgfWF42irheqJ5neJBjpU7yTi75duvD0FpfCGuD1J7BJNmju4FPFJm8tpglFFCnR7vzZdjG5M3wRANS7pR4YgWS7aSkAbMFHnsnXMLD9nfHIdpsw6bDIVfdxP6I/s1600/contents.png</b:widget-setting>
+              <b:widget-setting name='text-1'>Well Crafted Contents</b:widget-setting>
+              <b:widget-setting name='link-1'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuYAO7c8dy3jjmjRnn3ibPtBlFnELjFTvFMaNRPdBddtCra04oH93tXMjh76YWUZaNsJ_niKkhXg-Sw5VmXwIaZOkJKMcelyaaNHq2R1MYyJlJxjWwb9QoGRJ8EZQz1Ua5gHXOUfwicFpwWo39iNOIdbPPzbPAND_RAQBPcb24yv8EbtusARFzuA4t7UY/s1600/contents.png</b:widget-setting>
               <b:widget-setting name='text-0'>Online Radio</b:widget-setting>
               <b:widget-setting name='link-2'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgswtx9U5CMxqkw5iNS1y9OpFy_F9lZwseZQH-8Ss3N10HCvBT0vT3Ua20gKIQ1usrskCPflGlYJNfGC-fXi-FukHdFFSpYaMGsql5hguDDXJkfmEq41JRV0I_IAgO7JPbIyFCS6nK5l-pzkrN3xwkHApx9GBC2ZaYbknZbMk_VVaJM8Xr3vyo1iGVq5kg/s1600/media-ecosystem.png</b:widget-setting>
               <b:widget-setting name='text-3'>Creator Agency</b:widget-setting>
@@ -760,7 +762,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     <div id='intro-services-wrap'>
       <div class='container row'>
         <b:section id='intro-services' maxwidgets='3' name='Main Intro Services' showaddelement='no'>
-          <b:widget id='Image3' locked='true' title='Pinoy Seoul Creators' type='Image' version='2' visible='true'>
+          <b:widget id='Image3' locked='true' title='Seoul Talents' type='Image' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnOZ50Wnxsnamk-mZod40zhmHT9hPm5euRwwrohzVsRqBGdyiJnSxKKHAu89YszUbFLGH3k1l9SElSDJCK0wgsgD4P2OjAMm4XIxitY2EWTMX3U7ahrBz5A95ka5EH_YANtfkvVerA/s1600/service1.png</b:widget-setting>
               <b:widget-setting name='displayHeight'>70</b:widget-setting>
@@ -1369,42 +1371,42 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
             <b:includable id='postMetadataJSON' var='post'>
               <script type='application/ld+json'>
                 {
-                  "@context": "http://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "WebPage",
-                    "@id": "<data:post.url.canonical.jsonEscaped/>"
+                  &quot;@context&quot;: &quot;http://schema.org&quot;,
+                  &quot;@type&quot;: &quot;BlogPosting&quot;,
+                  &quot;mainEntityOfPage&quot;: {
+                    &quot;@type&quot;: &quot;WebPage&quot;,
+                    &quot;@id&quot;: &quot;<data:post.url.canonical.jsonEscaped/>&quot;
                   },
-                  "headline": "<data:post.title.jsonEscaped/>",
-                  "image": {
-                    "@type": "ImageObject",
+                  &quot;headline&quot;: &quot;<data:post.title.jsonEscaped/>&quot;,
+                  &quot;image&quot;: {
+                    &quot;@type&quot;: &quot;ImageObject&quot;,
                     <b:if cond='data:post.featuredImage.isResizable'>
-                      "url": "<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:630&quot;)'/>",
-                      "height": 630,
-                      "width": 1200
+                      &quot;url&quot;: &quot;<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:630&quot;)'/>&quot;,
+                      &quot;height&quot;: 630,
+                      &quot;width&quot;: 1200
                     <b:else/>
-                      "url": "https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/",
-                      "height": 348,
-                      "width": 1200
+                      &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/&quot;,
+                      &quot;height&quot;: 348,
+                      &quot;width&quot;: 1200
                     </b:if>
                   },
-                  "datePublished": "<data:post.dateHeader.iso8601/>",
-                  "dateModified": "<data:post.lastUpdated.iso8601/>",
-                  "author": {
-                    "@type": "Person",
-                    "name": "<data:post.author.name.jsonEscaped/>"
+                  &quot;datePublished&quot;: &quot;<data:post.dateHeader.iso8601/>&quot;,
+                  &quot;dateModified&quot;: &quot;<data:post.lastUpdated.iso8601/>&quot;,
+                  &quot;author&quot;: {
+                    &quot;@type&quot;: &quot;Person&quot;,
+                    &quot;name&quot;: &quot;<data:post.author.name.jsonEscaped/>&quot;
                   },
-                  "publisher": {
-                    "@type": "Organization",
-                    "name": "<data:blog.title.escaped/>",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4EFFiPBGQ6_E_noTIVeaUmMfE-jWRHzRA2LLZxkckH7TWgjaFN502EEeLskJ7_tEBLgo8g7SlVR_F9ywsgPJeRHTcTkK_C9gwy4iO4vzJ74vLxt9qcXHfJY9rgjwSpz5ApwMOvOh5_J4/s170/PSmedia.png",
-                      "width": 170,
-                      "height": 40
+                  &quot;publisher&quot;: {
+                    &quot;@type&quot;: &quot;Organization&quot;,
+                    &quot;name&quot;: &quot;<data:blog.title.escaped/>&quot;,
+                    &quot;logo&quot;: {
+                      &quot;@type&quot;: &quot;ImageObject&quot;,
+                      &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4EFFiPBGQ6_E_noTIVeaUmMfE-jWRHzRA2LLZxkckH7TWgjaFN502EEeLskJ7_tEBLgo8g7SlVR_F9ywsgPJeRHTcTkK_C9gwy4iO4vzJ74vLxt9qcXHfJY9rgjwSpz5ApwMOvOh5_J4/s170/PSmedia.png&quot;,
+                      &quot;width&quot;: 170,
+                      &quot;height&quot;: 40
                     }
                   },
-                  "description": "<data:view.description.jsonEscaped/>"
+                  &quot;description&quot;: &quot;<data:view.description.jsonEscaped/>&quot;
                 }
               </script>
             </b:includable>
@@ -2227,7 +2229,7 @@ height: 100%;
 <div class='row container email-folower-wrap'>
   
   
-<div style='text-align: center;'><h3><span style='color: white;'>Building Bridges That Last</span></h3></div><div style='text-align: center;'><span><span style='color: white;'>PS Media connects Korean and Filipino communities through authentic storytelling and innovative platforms. Since 2017, we&#39;ve grown from a simple website to a multi-platform media enterprise trusted by over 136,000 community members. Our mission is creating sustainable cultural exchange that benefits both communities equally.</span></span></div><div style='text-align: center;'><span style='background-color: black; color: white;'><br/></span></div><div style='text-align: center;'><span style='background-color: black; color: white;'/></div>
+<div style='text-align: center;'><h3><span style='color: white;'>Building Bridges That Last</span></h3></div><div style='text-align: center;'><span><span style='color: white;'>PS Media connects Korean and Filipino communities through authentic storytelling and innovative platforms. Since 2017, we&#39;ve grown from a simple website to a multi-platform media enterprise trusted by over 180,000 community members. Our mission is creating sustainable cultural exchange that benefits both communities equally.</span></span></div><div style='text-align: center;'><span style='background-color: black; color: white;'><br/></span></div><div style='text-align: center;'><span style='background-color: black; color: white;'/></div>
   
   
   <b:section class='custom-email-follow' id='Email Subscription Widget' preferred='yes' showaddelement='no'/>
@@ -2312,11 +2314,13 @@ height: 100%;
         <b:section class='social-footer' id='social-footer' maxwidgets='1' name='Social Footer' showaddelement='yes'>
           <b:widget id='LinkList76' locked='true' title='Social Footer Widget' type='LinkList' version='2' visible='true'>
             <b:widget-settings>
+              <b:widget-setting name='link-3'>https://github.com/pinoyseoul</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
               <b:widget-setting name='text-1'>youtube</b:widget-setting>
               <b:widget-setting name='link-1'>https://www.youtube.com/pinoyseoul</b:widget-setting>
               <b:widget-setting name='text-0'>facebook</b:widget-setting>
               <b:widget-setting name='link-2'>https://play.google.com/store/apps/dev?id=5053859818212024185</b:widget-setting>
+              <b:widget-setting name='text-3'>github</b:widget-setting>
               <b:widget-setting name='link-0'>https://facebook.com/pinoyseoul.com</b:widget-setting>
               <b:widget-setting name='text-2'>gplus</b:widget-setting>
             </b:widget-settings>
